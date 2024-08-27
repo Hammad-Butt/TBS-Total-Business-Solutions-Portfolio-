@@ -1,153 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hammad Butt Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"> <!-- Ensure this path is correct -->
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+    <title>TBS| Consulting Company</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
-<body class="bg-white text-gray-900">
-    <!-- Navbar -->
-    <header class="bg-white shadow-lg fixed top-0 left-0 right-0 z-50">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 class="text-xl font-bold">HAMMAD BUTT PORTFOLIO</h1>
-            <nav class="flex items-center">
-                <ul class="flex space-x-4">
-                    <li><a href="#" class="text-gray-700 hover:text-gray-900">Home</a></li>
-                    <li><a href="#about" class="text-gray-700 hover:text-gray-900">About</a></li>
-                    <li><a href="#services" class="text-gray-700 hover:text-gray-900">Services</a></li>
-                </ul>
-                <a href="#contact" class="ml-6 px-4 py-2 border border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition">Contact</a>
-            </nav>
-        </div>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Total Business Solutions Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Clients</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="pt-20">
-        <!-- Hero Section -->
-        <section class="relative h-screen bg-cover bg-center" style="background-image: url('Hello.jpg'); background-attachment: fixed; filter: brightness(1.2);">
-            <div class="absolute inset-0 bg-black opacity-50"></div>
-            <div class="relative container mx-auto px-4 py-24 flex flex-col justify-center items-start h-full">
-                <h2 class="text-5xl font-bold text-white mb-4">Hammad Butt Portfolio</h2>
-                <p class="text-lg text-white mb-8">Showcasing the skills and projects of Hammad Butt, a dedicated front-end developer.</p>
-                <a href="#services" class="px-6 py-3 bg-green-500 text-white font-bold hover:bg-green-600 transition">View Services</a>
+    <section class="background-section">
+        <div class="text-overlay">
+            <h1>Your Text Here</h1>
+            <p>Some additional text or description goes here.</p>
+        </div>
+    </section>
+     <!-- Services Section -->
+     <div class="services-section">
+        <h2>SOME SERVICES</h2>
+        <p>We just do not Consult to achieve certification but to improve the overall Business Processes of an Organization. We are not only ISO Consultant, we have provided Consultancy</p>
+        
+        <div class="services-container">
+            <div class="service-box">
+                <img src="https://img.icons8.com/ios-filled/50/000000/computer.png" alt="HR/Recruitments">
+                <h3>HR/Recruitments</h3>
+                <p>TBS works alongside clients to recruit staff across a diverse range of professions and roles...</p>
+                <a href="#">read more</a>
             </div>
-        </section>
-
-        <!-- About Me Section -->
-        <section id="about" class="container mx-auto px-4 py-16 flex flex-col md:flex-row items-stretch">
-            <!-- Text Column -->
-            <div class="md:w-1/2 mb-8 md:mb-0 flex flex-col justify-center">
-                <h3 class="text-green-600 font-bold text-sm mb-2">MEET HAMMAD BUTT</h3>
-                <h2 class="text-3xl font-bold text-gray-900 mb-6">A passionate front-end developer</h2>
-                <p class="text-gray-700 mb-6">
-                    Hammad Butt is a dedicated front-end developer based in Lahore. With a strong foundation in web technologies, he transforms ideas into engaging digital experiences. His passion for coding and design shines through in every project, ensuring that clients receive not just functional websites, but visually stunning creations that communicate their brand ethos. Hammad is committed to staying updated with the latest industry trends to deliver innovative solutions that exceed expectations.
-                </p>
-                <a href="#contact" class="text-green-600 font-bold hover:underline">Get in touch</a>
+    
+            <div class="service-box">
+                <img src="https://img.icons8.com/ios-filled/50/000000/computer.png" alt="Environmental Services">
+                <h3>ENVIRONMENTAL SERVICES</h3>
+                <p>All businesses should be considering how to best manage their carbon (or Greenhouse Gas) emissions...</p>
+                <a href="#">read more</a>
             </div>
-            <!-- Image Column -->
-            <div class="md:w-1/2 flex items-center">
-                <img src="Hello 1.jpg" alt="Laptop with a code snippet" class="rounded-lg shadow-lg object-cover small-image">
+    
+            <div class="service-box">
+                <img src="https://img.icons8.com/ios-filled/50/000000/computer.png" alt="Youth/Corporate Trainings">
+                <h3>YOUTH / CORPORATE TRAININGS</h3>
+                <p>We would like to inspire young professionals to live life to its fullest by exploring and using their talents and gifts...</p>
+                <a href="#">read more</a>
             </div>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services" class="bg-gray-50 py-16">
-            <div class="container mx-auto px-4">
-                <!-- Section Title -->
-                <h3 class="text-green-600 font-bold text-sm mb-2">WHAT I OFFER</h3>
-                <h2 class="text-3xl font-bold text-gray-900 mb-10">Expertise in web development</h2>
-
-                <!-- Services Grid -->
-                <div class="grid md:grid-cols-3 gap-8">
-                    <!-- Card 1 -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                        <img src="https://unsplash.com/photos/yEtke72nA-Q/download?force=true&w=640" alt="Responsive web design" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">Responsive web design &rarr;</h3>
-                            <p class="text-gray-700">Craft stunning websites that look great on any device.</p>
-                        </div>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                        <img src="https://unsplash.com/photos/tZc3vjPCk-Q/download?force=true&w=640" alt="JavaScript development" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">JavaScript development &rarr;</h3>
-                            <p class="text-gray-700">Bring your website to life with interactive features.</p>
-                        </div>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                        <img src="https://unsplash.com/photos/-r5KSMkyoSc/download?force=true&w=640" alt="UI/UX design" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">UI/UX design &rarr;</h3>
-                            <p class="text-gray-700">Enhance user satisfaction with intuitive designs.</p>
-                        </div>
-                    </div>
+    
+            <div class="service-box">
+                <img src="https://img.icons8.com/ios-filled/50/000000/computer.png" alt="System/Factory Certification">
+                <h3>SYSTEM / FACTORY CERTIFICATION</h3>
+                <p>Management System Certification is defined as a procedure by which a third party gives written assurance...</p>
+                <a href="#">read more</a>
+            </div>
+        </div>
+    </div>
+    <div class="meet-the-team">
+        <h2>Meet the Team</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="team-member1.jpg" alt="Team Member 1">
+                <h3>Jane Doe</h3>
+                <p class="job-title">CEO & Founder</p>
+                <p class="bio">Jane is the visionary behind our company. With over 15 years of experience in the industry, she leads with passion and dedication.</p>
+            </div>
+            <div class="team-member">
+                <img src="team-member2.jpg" alt="Team Member 2">
+                <h3>John Smith</h3>
+                <p class="job-title">Lead Developer</p>
+                <p class="bio">John is a master of code. He leads the development team, ensuring that our projects are top-notch and delivered on time.</p>
+            </div>
+            <div class="team-member">
+                <img src="team-member3.jpg" alt="Team Member 3">
+                <h3>Emily Johnson</h3>
+                <p class="job-title">Head of Marketing</p>
+                <p class="bio">Emily is the marketing guru who helps our brand reach new heights. Her innovative strategies are key to our success.</p>
+            </div>
+            <!-- Add more team members as needed -->
+        </div>
+    </div>
+    <div class="our-clients">
+        <h2>Our Clients</h2>
+        <div class="clients-container">
+            <div class="client-logo">
+                <img src="client1-logo.png" alt="Client 1">
+            </div>
+            <div class="client-logo">
+                <img src="client2-logo.png" alt="Client 2">
+            </div>
+            <div class="client-logo">
+                <img src="client3-logo.png" alt="Client 3">
+            </div>
+            <div class="client-logo">
+                <img src="client4-logo.png" alt="Client 4">
+            </div>
+            <div class="client-logo">
+                <img src="client5-logo.png" alt="Client 5">
+            </div>
+            <!-- Add more client logos as needed -->
+        </div>
+    </div>
+    <div class="contact-us">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p>We're here to help and answer any questions you might have. We look forward to hearing from you!</p>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>1234 Street Name, City, Country</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>+123 456 7890</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@company.com</p>
                 </div>
             </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="bg-gray-100 py-16">
-            <div class="container mx-auto px-4">
-                <div class="bg-white rounded-lg shadow-lg p-8 flex flex-col md:flex-row">
-                    <div class="md:w-1/2 md:pr-8 mb-8 md:mb-0">
-                        <h2 class="text-green-500 font-bold text-sm mb-2">GET IN TOUCH</h2>
-                        <h1 class="text-4xl font-bold text-gray-900 mb-6">Let's start a conversation</h1>
+            <div class="contact-form">
+                <form>
+                    <div class="input-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
                     </div>
-                    <div class="md:w-1/2">
-                        <form action="#" method="post">
-                            <div class="mb-4">
-                                <label for="name" class="text-gray-700 font-semibold block mb-2">Name <span class="text-red-500">*</span></label>
-                                <input type="text" id="name" name="name" required placeholder="Jane Smith"
-                                    class="w-full p-3 bg-gray-100 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-md">
-                            </div>
-
-                            <div class="mb-4">
-                                <label for="email" class="text-gray-700 font-semibold block mb-2">Email address <span class="text-red-500">*</span></label>
-                                <input type="email" id="email" name="email" required placeholder="email@website.com"
-                                    class="w-full p-3 bg-gray-100 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-md">
-                            </div>
-
-                            <div class="mb-4">
-                                <label for="phone" class="text-gray-700 font-semibold block mb-2">Phone number <span class="text-red-500">*</span></label>
-                                <input type="tel" id="phone" name="phone" required placeholder="555-555-5555"
-                                    class="w-full p-3 bg-gray-100 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-md">
-                            </div>
-
-                            <div class="mb-4">
-                                <label for="message" class="text-gray-700 font-semibold block mb-2">Message</label>
-                                <textarea id="message" name="message" placeholder=""
-                                    class="w-full p-3 bg-gray-100 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-md"></textarea>
-                            </div>
-
-                            <div class="flex items-start mb-4">
-                                <input type="checkbox" id="consent" name="consent" required
-                                    class="mr-2 mt-1 bg-green-500 border border-gray-300">
-                                <label for="consent" class="text-gray-700">I allow this website to store my submission so they can respond to my inquiry. <span class="text-red-500">*</span></label>
-                            </div>
-
-                            <button type="submit"
-                                class="w-full p-3 bg-green-500 text-white font-semibold rounded-md hover:bg-green-600 transition">
-                                SUBMIT
-                            </button>
-                        </form>
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Your Email</label>
                     </div>
-                </div>
+                    <div class="input-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
             </div>
-        </section>
-    </main>
+        </div>
+    </div>
+            
 </body>
-
 </html>
