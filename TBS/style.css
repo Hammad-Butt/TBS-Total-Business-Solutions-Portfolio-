@@ -12,7 +12,6 @@ body {
 }
 
 /* Styling the navbar */
-/* Navbar Styling */
 .navbar {
     position: fixed; /* Make the navbar fixed */
     top: 0;
@@ -24,7 +23,6 @@ body {
     align-items: center;
     justify-content: space-between;
     z-index: 1000; /* Ensures the navbar is above other content */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
 }
 
 /* Styling the logo */
@@ -37,7 +35,7 @@ body {
     list-style: none;
     display: flex;
     gap: 20px;
-    padding-left: 20px; /* Adjust space between logo and links */
+    padding-left: 50px; /* Add space between logo and links */
 }
 
 /* Styling the links */
@@ -65,40 +63,31 @@ body {
 /* Header styling */
 header {
     width: 100%;
-    background-color: transparent; /* Ensure background is transparent so the navbar shows */
-    border-bottom: none; /* Remove any border */
-    padding: 0; /* Remove extra padding if necessary */
+    background-color: #ffffff;
+    border-bottom: 1px solid #cccccc;
 }
 
-
 /* Services section styling */
-/* Styling for the services section */
 .services-section {
     text-align: center;
     padding: 50px 20px;
 }
-
 .services-section h2 {
     font-size: 36px;
     margin-bottom: 20px;
     font-weight: 400;
 }
-
 .services-section p {
     font-size: 16px;
     color: #555;
     max-width: 600px;
     margin: 0 auto 40px auto;
 }
-
-/* Container for the service boxes */
 .services-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
-/* Individual service box styling */
 .service-box {
     background-color: #fff;
     padding: 20px;
@@ -108,46 +97,30 @@ header {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
 }
-
 .service-box:hover {
     transform: translateY(-10px);
 }
-
-/* Styling for the icons */
 .service-box img {
     width: 50px;
     height: 50px;
     margin-bottom: 20px;
-    transition: transform 0.3s ease-in-out; /* Ensure smooth transition */
 }
-
-/* Rotation effect on hover */
-.service-box img:hover {
-    transform: rotate(360deg); /* Rotate 360 degrees */
-}
-
-/* Heading styling */
 .service-box h3 {
     font-size: 20px;
     margin-bottom: 15px;
     font-weight: 400;
 }
-
-/* Paragraph styling */
 .service-box p {
     font-size: 14px;
     color: #777;
     margin-bottom: 20px;
 }
-
-/* Link styling */
 .service-box a {
     text-decoration: none;
     color: #f49000;
     font-weight: bold;
     font-size: 14px;
 }
-
 
 /* Meet the Team Section */
 .meet-the-team {
@@ -210,55 +183,51 @@ header {
 /* Our Clients Section */
 .our-clients {
     text-align: center;
-    overflow: hidden;
-    position: relative;
-    padding: 20px 0; /* Add vertical padding to increase height */
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.our-clients h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
 }
 
 .clients-container {
-    white-space: nowrap;
-    overflow: hidden;
-    position: relative;
-    padding: 10px 0; /* Add padding if needed to adjust spacing */
-}
-
-.client-logos {
-    display: inline-block;
-    white-space: nowrap;
-    animation: scroll 20s linear infinite;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .client-logo {
-    display: inline-block;
-    margin: 0 20px;
+    max-width: 150px;
+    transition: transform 0.3s ease;
 }
 
 .client-logo img {
-    max-width: 100px; /* Adjust the size as needed */
+    width: 100%;
     height: auto;
+    display: block;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, transform 0.3s ease;
 }
 
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
+.client-logo:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.1);
 }
 
-/* Contact Us Section */
 /* Contact Us Section */
 .contact-us {
     padding: 50px 20px;
-    background-color: #000; /* Black background color */
+    background-color: #cacaca;
     text-align: center;
 }
 
 .contact-us h2 {
     font-size: 36px;
     margin-bottom: 40px;
-    color: #fff; /* White color for heading */
+    color: #333;
 }
 
 .contact-container {
@@ -276,13 +245,13 @@ header {
 .contact-info h3 {
     font-size: 24px;
     margin-bottom: 20px;
-    color: #fff; /* White color for subheading */
+    color: #333;
 }
 
 .contact-info p {
     font-size: 16px;
     margin-bottom: 20px;
-    color: #aaa; /* Light gray color for paragraphs */
+    color: #666;
     line-height: 1.6;
 }
 
@@ -291,12 +260,12 @@ header {
     align-items: center;
     margin-bottom: 15px;
     font-size: 16px;
-    color: #fff; /* White color for info items */
+    color: #333;
 }
 
 .info-item i {
     font-size: 20px;
-    color: #FFA500; /* Orange color for icons */
+    color: #FFA500;
     margin-right: 15px;
 }
 
@@ -319,17 +288,15 @@ header {
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #666; /* Gray border for input fields */
+    border: 1px solid #ccc;
     border-radius: 5px;
     outline: none;
-    background-color: #333; /* Dark gray background for input fields */
-    color: #fff; /* White text color for input fields */
     transition: border-color 0.3s ease;
 }
 
 .input-group input:focus,
 .input-group textarea:focus {
-    border-color: #FFA500; /* Orange border on focus */
+    border-color: #FFA500;
 }
 
 .input-group label {
@@ -337,7 +304,7 @@ header {
     top: 10px;
     left: 15px;
     font-size: 16px;
-    color: #aaa; /* Light gray color for labels */
+    color: #aaa;
     transition: all 0.3s ease;
     pointer-events: none;
 }
@@ -349,14 +316,14 @@ header {
     top: -15px;
     left: 10px;
     font-size: 12px;
-    color: #FFA500; /* Orange color for label when input is focused */
-    background-color: #000; /* Black background for label */
+    color: #FFA500;
+    background-color: #f4f4f4;
     padding: 0 5px;
 }
 
 .submit-btn {
-    background-color: #FFA500; /* Orange background for submit button */
-    color: #fff; /* White text color for submit button */
+    background-color: #FFA500;
+    color: #fff;
     padding: 10px 20px;
     font-size: 18px;
     border: none;
@@ -366,9 +333,8 @@ header {
 }
 
 .submit-btn:hover {
-    background-color: #ff8c00; /* Darker orange on hover */
+    background-color: #ff8c00;
 }
-
 
 /* Make sure to set a height for the section or it won't be visible */
 .background-section {
@@ -389,47 +355,4 @@ header {
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better text readability */
     padding: 20px;
     border-radius: 10px; /* Optional rounded corners */
-}
-#about-us {
-    text-align: center;
-    margin: 0 auto;
-    max-width: 800px; /* Adjust as needed */
-  }
-  
-  #about-us h2 {
-    margin-bottom: 20px; /* Space between the heading and the text */
-  }
-  
-  #about-us p {
-    margin: 10px 0; /* Space between paragraphs */
-  }
-  
-  .customer-service-icon {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    /* Add styles for the icon here */
-  }
-  
-   /* Button Styling */
-   .scroll-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-}
-.scroll-to-top:hover {
-    background-color: orange;
 }
