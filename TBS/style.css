@@ -7,12 +7,11 @@
 }
 
 body {
-    background-color: #f4f4f4;
+    background-color: #000; /* Black background color */
     padding-top: 60px; /* Add padding to prevent content from hiding behind the fixed navbar */
 }
 
 /* Styling the navbar */
-/* Navbar Styling */
 .navbar {
     position: fixed; /* Make the navbar fixed */
     top: 0;
@@ -43,7 +42,7 @@ body {
 /* Styling the links */
 .nav-links li a {
     text-decoration: none;
-    color: white;
+    color: white; /* White text color for links */
     padding: 10px 15px;
     font-size: 16px;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -70,9 +69,7 @@ header {
     padding: 0; /* Remove extra padding if necessary */
 }
 
-
 /* Services section styling */
-/* Styling for the services section */
 .services-section {
     text-align: center;
     padding: 50px 20px;
@@ -82,11 +79,12 @@ header {
     font-size: 36px;
     margin-bottom: 20px;
     font-weight: 400;
+    color: white; /* White text color */
 }
 
 .services-section p {
     font-size: 16px;
-    color: #555;
+    color: #aaa; /* Light gray text color */
     max-width: 600px;
     margin: 0 auto 40px auto;
 }
@@ -100,7 +98,7 @@ header {
 
 /* Individual service box styling */
 .service-box {
-    background-color: #fff;
+    background-color: #333; /* Dark gray background color */
     padding: 20px;
     margin: 10px;
     width: 250px;
@@ -131,34 +129,35 @@ header {
     font-size: 20px;
     margin-bottom: 15px;
     font-weight: 400;
+    color: white; /* White text color */
 }
 
 /* Paragraph styling */
 .service-box p {
     font-size: 14px;
-    color: #777;
+    color: #aaa; /* Light gray text color */
     margin-bottom: 20px;
 }
 
 /* Link styling */
 .service-box a {
     text-decoration: none;
-    color: #f49000;
+    color: #ff9800; /* Orange text color */
     font-weight: bold;
     font-size: 14px;
 }
-
 
 /* Meet the Team Section */
 .meet-the-team {
     text-align: center;
     padding: 50px 20px;
-    background-color: #f5f5f5;
+    background-color: #333; /* Dark gray background color */
 }
 
 .meet-the-team h2 {
     font-size: 36px;
     margin-bottom: 40px;
+    color: white; /* White text color */
 }
 
 .team-container {
@@ -169,7 +168,7 @@ header {
 }
 
 .team-member {
-    background-color: #fff;
+    background-color: #444; /* Slightly lighter gray background color */
     border-radius: 10px;
     padding: 20px;
     max-width: 250px;
@@ -187,19 +186,19 @@ header {
 
 .team-member h3 {
     font-size: 20px;
-    color: #333;
+    color: white; /* White text color */
     margin-bottom: 10px;
 }
 
 .team-member .job-title {
     font-size: 16px;
-    color: #777;
+    color: #aaa; /* Light gray text color */
     margin-bottom: 15px;
 }
 
 .team-member .bio {
     font-size: 14px;
-    color: #666;
+    color: #aaa; /* Light gray text color */
 }
 
 .team-member:hover {
@@ -212,14 +211,14 @@ header {
     text-align: center;
     overflow: hidden;
     position: relative;
-    padding: 20px 0; /* Add vertical padding to increase height */
+    padding: 20px 0;
 }
 
 .clients-container {
     white-space: nowrap;
     overflow: hidden;
     position: relative;
-    padding: 10px 0; /* Add padding if needed to adjust spacing */
+    padding: 10px 0;
 }
 
 .client-logos {
@@ -248,7 +247,6 @@ header {
 }
 
 /* Contact Us Section */
-/* Contact Us Section */
 .contact-us {
     padding: 50px 20px;
     background-color: #000; /* Black background color */
@@ -258,7 +256,7 @@ header {
 .contact-us h2 {
     font-size: 36px;
     margin-bottom: 40px;
-    color: #fff; /* White color for heading */
+    color: white; /* White text color */
 }
 
 .contact-container {
@@ -276,13 +274,13 @@ header {
 .contact-info h3 {
     font-size: 24px;
     margin-bottom: 20px;
-    color: #fff; /* White color for subheading */
+    color: white; /* White text color */
 }
 
 .contact-info p {
     font-size: 16px;
     margin-bottom: 20px;
-    color: #aaa; /* Light gray color for paragraphs */
+    color: #aaa; /* Light gray text color */
     line-height: 1.6;
 }
 
@@ -291,12 +289,12 @@ header {
     align-items: center;
     margin-bottom: 15px;
     font-size: 16px;
-    color: #fff; /* White color for info items */
+    color: white; /* White text color */
 }
 
 .info-item i {
     font-size: 20px;
-    color: #FFA500; /* Orange color for icons */
+    color: #ff9800; /* Orange color for icons */
     margin-right: 15px;
 }
 
@@ -323,13 +321,13 @@ header {
     border-radius: 5px;
     outline: none;
     background-color: #333; /* Dark gray background for input fields */
-    color: #fff; /* White text color for input fields */
+    color: white; /* White text color */
     transition: border-color 0.3s ease;
 }
 
 .input-group input:focus,
 .input-group textarea:focus {
-    border-color: #FFA500; /* Orange border on focus */
+    border-color: #ff9800; /* Orange border on focus */
 }
 
 .input-group label {
@@ -337,7 +335,7 @@ header {
     top: 10px;
     left: 15px;
     font-size: 16px;
-    color: #aaa; /* Light gray color for labels */
+    color: #aaa; /* Light gray text color */
     transition: all 0.3s ease;
     pointer-events: none;
 }
@@ -349,16 +347,17 @@ header {
     top: -15px;
     left: 10px;
     font-size: 12px;
-    color: #FFA500; /* Orange color for label when input is focused */
-    background-color: #000; /* Black background for label */
+    color: #ff9800; /* Orange text color */
+    background-color: #000; /* Black background color for label */
     padding: 0 5px;
 }
 
 .submit-btn {
-    background-color: #FFA500; /* Orange background for submit button */
-    color: #fff; /* White text color for submit button */
-    padding: 10px 20px;
+    background-color: #ff9800; /* Orange background for submit button */
+    color: #333; /* Dark text color for button */
+    padding: 12px 20px;
     font-size: 18px;
+    font-weight: bold;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -366,70 +365,28 @@ header {
 }
 
 .submit-btn:hover {
-    background-color: #ff8c00; /* Darker orange on hover */
+    background-color: #e68900;
 }
 
-
-/* Make sure to set a height for the section or it won't be visible */
-.background-section {
-    background-image: url('H1.jpg'); /* Replace with your image path */
-    background-size: cover; /* Ensures the image covers the entire section */
-    background-position: center; /* Centers the image in the section */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    height: 100vh; /* Full viewport height; adjust as needed */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white; /* Text color, adjust as needed */
-    text-align: center; /* Center the text */
-    padding: 20px; /* Optional padding */
-}
-
-.text-overlay {
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better text readability */
+/* Footer Section */
+footer {
+    background-color: #222; /* Dark gray background color */
     padding: 20px;
-    border-radius: 10px; /* Optional rounded corners */
-}
-#about-us {
     text-align: center;
-    margin: 0 auto;
-    max-width: 800px; /* Adjust as needed */
-  }
-  
-  #about-us h2 {
-    margin-bottom: 20px; /* Space between the heading and the text */
-  }
-  
-  #about-us p {
-    margin: 10px 0; /* Space between paragraphs */
-  }
-  
-  .customer-service-icon {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    /* Add styles for the icon here */
-  }
-  
-   /* Button Styling */
-   .scroll-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
+    color: white; /* White text color */
+    border-top: 1px solid #666; /* Gray border at the top */
 }
-.scroll-to-top:hover {
-    background-color: orange;
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer p a {
+    color: #ff9800; /* Orange color for links */
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
 }
