@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TBS| Consulting Company</title>
+    <title>TBS | Consulting Company</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <nav class="navbar">
@@ -14,7 +21,7 @@
                 <img src="logo.png" alt="Total Business Solutions Logo">
             </div>
             <ul class="nav-links">
-                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#top" class="active">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#team">Our Team</a></li>
@@ -25,17 +32,20 @@
         </nav>
     </header>
 
+    <!-- Top Section -->
+    <div id="top"></div>
+
     <section class="background-section">
         <div class="text-overlay">
             <h1>Your Text Here</h1>
             <p>Some additional text or description goes here.</p>
         </div>
     </section>
-     <!-- Services Section -->
-     <div id="services" class="services-section">
+
+    <!-- Services Section -->
+    <div id="services" class="services-section">
         <h2>SOME SERVICES</h2>
         <p>We just do not Consult to achieve certification but to improve the overall Business Processes of an Organization. We are not only ISO Consultant, we have provided Consultancy</p>
-        
         <div class="services-container">
             <div class="service-box">
                 <img src="https://img.icons8.com/ios-filled/50/000000/computer.png" alt="HR/Recruitments">
@@ -43,21 +53,21 @@
                 <p>TBS works alongside clients to recruit staff across a diverse range of professions and roles...</p>
                 <a href="#">read more</a>
             </div>
-    
+
             <div class="service-box">
                 <img src="https://img.icons8.com/ios-filled/50/000000/computer.png" alt="Environmental Services">
                 <h3>ENVIRONMENTAL SERVICES</h3>
                 <p>All businesses should be considering how to best manage their carbon (or Greenhouse Gas) emissions...</p>
                 <a href="#">read more</a>
             </div>
-    
+
             <div class="service-box">
                 <img src="https://img.icons8.com/ios-filled/50/000000/computer.png" alt="Youth/Corporate Trainings">
                 <h3>YOUTH / CORPORATE TRAININGS</h3>
                 <p>We would like to inspire young professionals to live life to its fullest by exploring and using their talents and gifts...</p>
                 <a href="#">read more</a>
             </div>
-    
+
             <div class="service-box">
                 <img src="https://img.icons8.com/ios-filled/50/000000/computer.png" alt="System/Factory Certification">
                 <h3>SYSTEM / FACTORY CERTIFICATION</h3>
@@ -66,7 +76,9 @@
             </div>
         </div>
     </div>
-    <div id="team"class="meet-the-team">
+
+    <!-- Team Section -->
+    <div id="team" class="meet-the-team">
         <h2>Meet the Team</h2>
         <div class="team-container">
             <div class="team-member">
@@ -87,10 +99,11 @@
                 <p class="job-title">Head of Marketing</p>
                 <p class="bio">Emily is the marketing guru who helps our brand reach new heights. Her innovative strategies are key to our success.</p>
             </div>
-            <!-- Add more team members as needed -->
         </div>
     </div>
-    <div id="clients"class="our-clients">
+
+    <!-- Clients Section -->
+    <div id="clients" class="our-clients">
         <h2>Our Clients</h2>
         <div class="clients-container">
             <div class="client-logo">
@@ -108,10 +121,11 @@
             <div class="client-logo">
                 <img src="client5-logo.png" alt="Client 5">
             </div>
-            <!-- Add more client logos as needed -->
         </div>
     </div>
-    <div id="contact"class="contact-us">
+
+    <!-- Contact Section -->
+    <div id="contact" class="contact-us">
         <h2>Contact Us</h2>
         <div class="contact-container">
             <div class="contact-info">
@@ -149,6 +163,7 @@
             </div>
         </div>
     </div>
-            
+
 </body>
+
 </html>
